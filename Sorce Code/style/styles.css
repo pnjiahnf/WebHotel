@@ -1,0 +1,12 @@
+/* Global Styles for Additional Customization */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header a:hover {
+    text-decoration: underline;
+}

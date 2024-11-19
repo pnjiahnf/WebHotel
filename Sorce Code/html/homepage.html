@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel List - Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-orange-600 text-white">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-xl font-bold">HotelBooking</h1>
+        <nav class="space-x-4">
+          <a href="#" class="hover:underline">Home</a>
+          <a href="#" class="hover:underline">About</a>
+          <a href="#" class="hover:underline">Contact</a>
+          <a
+            href="login.html"
+            class="bg-white text-orange-600 px-4 py-2 rounded-lg hover:bg-gray-200 transition"
+            >Logout</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-200">
+      <div class="container mx-auto px-6 py-16 text-center">
+        <h2 class="text-4xl font-bold text-orange-600">Find Your Perfect Stay</h2>
+        <p class="mt-4 text-lg text-gray-700">
+          Discover and book the best hotels around the world.
+        </p>
+      </div>
+    </section>
+
+    <!-- Hotel List Section -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-6">
+          Available Hotels
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Hotel Card 1 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <img
+              src="..\asset\hotel1.jpeg"
+              alt="Hotel 1"
+              class="rounded-md mb-4"
+            />
+            <h4 class="text-xl font-bold text-gray-700">Grand Luxury Hotel</h4>
+            <p class="text-sm text-gray-600">Location: New York, USA</p>
+            <p class="mt-2 text-gray-700">
+              Experience top-notch luxury and comfort in the heart of the city.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block bg-orange-600 text-white py-2 px-4 rounded-lg hover:bg-orange-700 transition"
+            >
+              View Details
+            </a>
+          </div>
+          <!-- Hotel Card 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <img
+              src="..\asset\hotel2.jpeg"
+              alt="Hotel 2"
+              class="rounded-md mb-4"
+            />
+            <h4 class="text-xl font-bold text-gray-700">Ocean Breeze Resort</h4>
+            <p class="text-sm text-gray-600">Location: Bali, Indonesia</p>
+            <p class="mt-2 text-gray-700">
+              Enjoy stunning ocean views and world-class amenities.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block bg-orange-600 text-white py-2 px-4 rounded-lg hover:bg-orange-700 transition"
+            >
+              View Details
+            </a>
+          </div>
+          <!-- Hotel Card 3 -->
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <img
+              src="..\asset\hotel3.jpg"
+              alt="Hotel 3"
+              class="rounded-md mb-4"
+            />
+            <h4 class="text-xl font-bold text-gray-700">
+              Mountain Escape Lodge
+            </h4>
+            <p class="text-sm text-gray-600">Location: Aspen, USA</p>
+            <p class="mt-2 text-gray-700">
+              A serene getaway surrounded by breathtaking mountain views.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block bg-orange-600 text-white py-2 px-4 rounded-lg hover:bg-orange-700 transition"
+            >
+              View Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-orange-600 text-white py-4">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2024 HotelBooking. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
