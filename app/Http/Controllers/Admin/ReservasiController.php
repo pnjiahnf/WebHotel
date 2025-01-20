@@ -1,7 +1,8 @@
 <?php
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Models\Reservasi;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class ReservasiController extends Controller
@@ -25,26 +26,26 @@ class ReservasiController extends Controller
     $reservasi->update($validated);
 
     // Redirect atau response yang sesuai
-    return redirect()->route('reservasi.index')->with('success', 'Reservasi berhasil diperbarui!');
+    return redirect()->route('admin.reservasi.index')->with('success', 'Reservasi berhasil diperbarui!');
 }
 
     // Menampilkan daftar reservasi
     public function index()
     {
         $reservasi = Reservasi::all();
-        return view('reservasi.index', compact('reservasi'));
+        return view('admin.reservasi.index', compact('reservasi'));
     }
 
     // Menampilkan form edit reservasi
     public function edit($id)
     {
         $reservasi = Reservasi::findOrFail($id); // Cari reservasi berdasarkan ID
-        return view('reservasi.edit', compact('reservasi'));
+        return view('admin.reservasi.edit', compact('reservasi'));
     }
 
     public function create()
     {
-        return view('reservasi.create');
+        return view('admin.reservasi.create');
     }    
 
 public function store(Request $request)
@@ -62,7 +63,7 @@ public function store(Request $request)
     Reservasi::create($validated);
 
     // Redirect setelah berhasil
-    return redirect()->route('reservasi.index')->with('success', 'Reservasi berhasil ditambahkan!');
+    return redirect()->route('admin.reservasi.index')->with('success', 'Reservasi berhasil ditambahkan!');
 }
 
     public function destroy($id)
@@ -74,7 +75,7 @@ public function store(Request $request)
     $reservasi->delete();
 
     // Redirect atau response setelah berhasil menghapus
-    return redirect()->route('reservasi.index')->with('success', 'Reservasi berhasil dihapus!');
+    return redirect()->route('admin.reservasi.index')->with('success', 'Reservasi berhasil dihapus!');
 }
 
 }

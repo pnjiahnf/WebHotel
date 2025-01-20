@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Optional: Add any additional meta tags or links to favicon -->
 </head>
 <body class="bg-gray-100">
     <div id="app" class="relative min-h-screen flex">
@@ -19,22 +22,10 @@
             </div>
             <ul class="mt-4">
                 <li class="py-2 px-4 hover:bg-gray-700">
-                    <a href="{{ route('hotels.index') }}" class="block">Manajemen Hotel</a>
-                </li>
-                 <li class="py-2 px-4 hover:bg-gray-700">
-                    <a href="{{ route('reservasi.index') }}" class="block">Manajemen Reservasi</a>
-                </li>
-               {{-- <li class="py-2 px-4 hover:bg-gray-700">
-                    <a href="#" class="block">Manajemen Kamar</a>
+                    <a href="{{ route('admin.hotels.index') }}" class="block">Manajemen Hotel</a>
                 </li>
                 <li class="py-2 px-4 hover:bg-gray-700">
-                    <a href="#" class="block">Manajemen Tamu</a>
-                </li>
-                <li class="py-2 px-4 hover:bg-gray-700">
-                    <a href="#" class="block">Laporan Keuangan</a>
-                </li>
-                <li class="py-2 px-4 hover:bg-gray-700">
-                    <a href="#" class="block">Laporan Pemakaian Kamar</a> --}}
+                    <a href="{{ route('admin.reservasi.index') }}" class="block">Manajemen Reservasi</a>
                 </li>
             </ul>
         </div>

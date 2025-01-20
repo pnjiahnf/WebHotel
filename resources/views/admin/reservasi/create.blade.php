@@ -14,7 +14,7 @@
         </div>
     @endif
 
-    <form action="{{ route('reservasi.store') }}" method="POST">
+    <form action="{{ route('admin.reservasi.store') }}" method="POST">
         @csrf
         <div class="mb-4">
             <label for="nama_pelanggan" class="block text-gray-700 font-bold">Nama Pelanggan</label>

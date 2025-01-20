@@ -3,7 +3,7 @@
 @section('content')
 <div class="container mx-auto p-6">
     <h1 class="text-2xl font-bold mb-6">Create New Hotel</h1>
-    <form action="{{ route('hotels.store') }}" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+    <form action="{{ route('admin.hotels.store') }}" method="POST" class="bg-white p-6 rounded-lg shadow-md">
         @csrf
         <div class="mb-4">
             <label for="room_number" class="block text-sm font-medium">Room Number</label>
